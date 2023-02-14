@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import ExtendingStylepart2 from "./extendingStylepart2";
 
 function ExtendingStyles() {
     return (
