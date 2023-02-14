@@ -3,6 +3,7 @@ import styled from 'styled-components'
 function Start() {
     return (
       <Wrapper>
+        <h1>Start</h1>
         <Title>
           Hello World!
         </Title>

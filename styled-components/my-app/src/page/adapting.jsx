@@ -3,6 +3,7 @@ import styled from 'styled-components'
 function Adapting() {
   return (
     <div>
+      <h1>Adapting based on props</h1>
       <Button>Normal</Button>
       <Button primary>Primary</Button>
     </div>
