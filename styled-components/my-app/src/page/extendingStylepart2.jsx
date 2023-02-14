@@ -1,31 +1,30 @@
 import styled from 'styled-components'
-import ExtendingStylepart2 from "./extendingStylepart2";
 
-function ExtendingStyles() {
+function ExtendingStylepart2() {
     return (
       <div>
-            <h1>Extending Style part 1</h1>
-            <Button>Normal Button</Button>
-            <TomatoButton>Tomato Button</TomatoButton>
+        <h1>Extending Style part 2</h1>
+        <Button>Normal Button</Button>
+        <Button as="a" href="#">Link with Button styles</Button>
+        <TomatoButton as="a" href="#">Link with Tomato Button styles</TomatoButton>
       </div>
     )
 }
 
-export default ExtendingStyles
+export default ExtendingStylepart2
 // The Button from the last section without the interpolations
 const Button = styled.button`
+  display: inline-block;
   color: palevioletred;
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
   border-radius: 3px;
-    background-color: transparent;
+  background-color: transparent;
 `;
 
-// A new component based on Button, but with some override styles
 const TomatoButton = styled(Button)`
   color: tomato;
   border-color: tomato;
 `;
-

@@ -1,6 +1,7 @@
 import Start from "./start";
 import Adapting from "./adapting";
 import ExtendingStyles from "./extendingStyles";
+import ExtendingStylepart2 from "./extendingStylepart2";
 
 function Documnet() {
     return (
@@ -8,6 +9,7 @@ function Documnet() {
             <Start/>
             <Adapting/>
             <ExtendingStyles/>
+            <ExtendingStylepart2/>
         </div>
     )
 }
