@@ -2,6 +2,7 @@ import StringStyles from "./stringStyles";
 import EmotionReact from "./emotionReact";
 import EmotionStyled from "./emotionStyled";
 import CompositionExOne from "./compositionExOne";
+import CompositionExTwo from "./compositionExTwo";
 
 function Page() {
   return (
@@ -10,6 +11,7 @@ function Page() {
       <EmotionReact />
       <EmotionStyled />
       <CompositionExOne />
+      <CompositionExTwo />
     </div>
   );
 }
