@@ -1,11 +1,18 @@
 import Page from "./page";
+import styled from "styled-components";
 
 function App() {
   return (
-    <div className>
+    <Container>
       <Page />
-    </div>
+    </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
