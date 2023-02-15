@@ -3,6 +3,7 @@ import EmotionReact from "./emotionReact";
 import EmotionStyled from "./emotionStyled";
 import CompositionExOne from "./compositionExOne";
 import CompositionExTwo from "./compositionExTwo";
+import CompositionExThree from "./compositionExThree";
 
 function Page() {
   return (
@@ -12,6 +13,7 @@ function Page() {
       <EmotionStyled />
       <CompositionExOne />
       <CompositionExTwo />
+      <CompositionExThree />
     </div>
   );
 }
