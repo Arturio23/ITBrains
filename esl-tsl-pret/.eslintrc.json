@@ -1,0 +1,63 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint-config-prettier",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+        "prettier",
+        "react",
+        "@typescript-eslint"
+    ],
+    "overrides": [
+        {
+            "files": ["**/*.test.js"],
+            "excludedFiles": ["**/test-utils/*.js"],
+            "extends": ["plugin:jest/recomended"],
+            "parser": "babel-eslint",
+            "plugins": ["jest"]
+        },
+        {
+            "files": ["**/*.ts?(x)"],
+            "extends": [
+                "plugin:@typescript-eslint/recommended",
+                "plugin:@react/recommended"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": ["@typescript-eslint"]
+        }
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "arrowFunctions": true,
+            "binaryLiterals": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "forOf": true,
+            "generators": true,
+            "modules": true,
+            "objectLiteralComputedProperties": true,
+            "objectLiteralDuplicateProperties": true,
+            "objectLiteralShorthandMethods": true,
+            "restParams": false,
+            "spread": true,
+            "superInFunctions": true,
+            "templateStrings": true,
+            "jsx": true
+        }
+    },
+    "rules": {
+        "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+        "eqeqeq": "off",
+        "curly": "error",
+        "quotes": ["error","double"]
+    }
+}
