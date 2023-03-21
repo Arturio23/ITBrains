@@ -4,8 +4,8 @@ module.exports = {
   entry: './resources/index.js',
   output: {
     filename: 'app.js',
-    path: path.join(__dirname, '/public/dist'),
-    publicPath: '/public/dist',
+    path: path.join(__dirname, '/public/normolize'),
+    publicPath: '/public/normolize',
     chunkFilename: '[id].js',
     library: 'MyLibrary',
     libraryTarget: 'umd',

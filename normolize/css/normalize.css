@@ -1,3 +1,4 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -165,6 +166,10 @@ textarea {
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
+
+    /* Браузери мають різні стандартні шрифти форми */
+    font-size:13px;
+    font-family:Arial;
 }
 
 /**
@@ -175,6 +180,12 @@ textarea {
 button,
 input { /* 1 */
     overflow: visible;
+}
+
+/* Видалення дурного зовнішнього світіння в Webkit */
+input:focus
+{
+    outline:0;
 }
 
 /**
@@ -346,3 +357,28 @@ template {
 [hidden] {
     display: none;
 }
+
+/* Вимкнути останній пошук webkit. Це додає приблизно 15 пікселів відступу зліва */
+::-webkit-search-decoration
+{
+    display:none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+    /* Виправити помилку відображення IE7 */
+    overflow:visible;
+    width:auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button
+{
+    padding:0;
+    border:0;
+    background:none;
+}
+
