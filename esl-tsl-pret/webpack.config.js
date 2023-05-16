@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './resources/index.js',
+  entry: './resources/index.html',
   output: {
     filename: 'app.js',
     path: path.join(__dirname, '/public/normolize'),
