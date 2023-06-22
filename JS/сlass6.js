@@ -1,17 +1,18 @@
-let animal = {
-  name: "Тварина",
-  eat() {
-    alert(`${this.name} їсть.`);
+class Animal {
+  showName() {  // замість this.name = 'тварина'
+    alert('тварина');
   }
-};
 
-let rabbit = {
-  __proto__: animal,
-  name: "Кролик",
-  eat() {
-    // ось як super.eat() міг би, мабуть, працювати
-    this.__proto__.eat.call(this); // (*)
+  constructor() {
+    this.showName(); // замість alert(this.name);
   }
-};
+}
 
-rabbit.eat(); // Кролик їсть.
+class Rabbit extends Animal {
+  showName() {
+    alert('кролик');
+  }
+}
+
+new Animal(); // тварина
+new Rabbit(); // кролик
