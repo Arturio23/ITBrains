@@ -4,11 +4,7 @@
 }}
 
 <main>
-  <header id='header'>
-    <h1>This is the Header</h1>
-  </header>
   <main id='main'>
-
     <div id='section1'>
       <h2>Section 1</h2>
     </div>
@@ -33,16 +29,15 @@
     <div id='section3'>
       <h2>Section 3</h2>
     </div>
-      <div id='section4'>
-          <div>{{> todo-list}}</div>
-      </div>
-      <div>
-          {{> scrollToTopBtn}}
-      </div>
+    <div class='scrollButton'>
+      <button
+        class='scroll-to-top'
+        id='scrollToTopBtn'
+        title='Go to top'
+      > </button>
+      <script src='scripts.js'></script>
+    </div>
   </main>
-  <footer id='footer'>
-    <p>This is the Footer</p>
-  </footer>
 </main>
 
 {{!

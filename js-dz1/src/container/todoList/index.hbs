@@ -1,0 +1,34 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main>
+  <div id='section4'>
+
+    <div class='todo-app'>
+      <h1 class='todo-app__title'>Todo List</h1>
+      <div class='todo-app__input-section'>
+        <input
+          type='text'
+          class='todo-app__input'
+          id='todo-input'
+          placeholder='Введіть задачу...'
+        />
+        <button
+          class='todo-app__add-button'
+          id='add-button'
+        >Додати</button>
+      </div>
+      <ul class='todo-app__list' id='todo-list'></ul>
+    </div>
+    <button class='scroll-to-top' title='Scroll to Top'>
+      <span class='scroll-to-top__arrow-icon'></span>
+    </button>
+  </div>
+</main>
+
+{{!
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
