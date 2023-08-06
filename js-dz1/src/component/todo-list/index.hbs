@@ -1,27 +1,21 @@
 <body>
   <div class='todo-app'>
-    <h1 class='todo-app__title'>To-Do List</h1>
-    <div class='todo-app__input-container'>
+    <h1 class='todo-app__title'>Todo List</h1>
+    <div class='todo-app__input-section'>
       <input
         type='text'
-        id='taskInput'
         class='todo-app__input'
-        placeholder='Enter a new task...'
+        id='todo-input'
+        placeholder='Введіть задачу...'
       />
       <button
-        id='addTaskBtn'
-        class='todo-app__button'
-      >Add</button>
+        class='todo-app__add-button'
+        id='add-button'
+      >Додати</button>
     </div>
-    <ul id='taskList' class='todo-app__task-list'>
-      <!-- Task items will be added here dynamically -->
-    </ul>
-    <button
-      class='todo-app__delete-button'
-      id='deleteButton'
-      title='Delete'
-    >
-      <span class='todo-app__trash-icon'></span>
-    </button>
+    <ul class='todo-app__list' id='todo-list'></ul>
   </div>
+  <button class='scroll-to-top' title='Scroll to Top'>
+    <span class='scroll-to-top__arrow-icon'></span>
+  </button>
 </body>
