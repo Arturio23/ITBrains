@@ -3,42 +3,20 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-  <main id='main'>
-    <div id='section1'>
-      <h2>Section 1</h2>
-    </div>
-    <div id='section2'>
-      <h2>Section 2</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div id='section3'>
-      <h2>Section 3</h2>
-    </div>
-    <div class='scrollButton'>
-      <button
-        class='scroll-to-top'
-        id='scrollToTopBtn'
-        title='Go to top'
-      > </button>
-      <script src='scripts.js'></script>
-    </div>
-  </main>
-</main>
+<body>
+  <div class='navigation-panel'>
+    <button class='back-btn'></button>
+    <button class='forward-btn'></button>
+    <button class='reload-btn'></button>
+    <button class='home-btn'></button>
+    <input
+      type='text'
+      class='url-input'
+      placeholder='Enter URL'
+    />
+    <button class='go-btn'>Go</button>
+  </div>
+</body>
 
 {{!
     Цей код містить лише те, що буде виводитись в <body>
